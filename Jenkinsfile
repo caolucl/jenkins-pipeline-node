@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Check file') {
             steps {
-                sh 'npm run test'
+                sh 'npm start & && wait $!'
                 sh 'curl http://127.0.0.1 || exit 1'
             }
         }
