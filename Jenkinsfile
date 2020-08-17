@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Check connection') {
             steps {
-                sh 'curl http://127.0.0.1 || exit 1'
+                sh 'curl http://127.0.0.1:8000 || exit 1'
             }
         }
     }
