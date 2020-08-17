@@ -8,6 +8,11 @@ pipeline {
     */
     agent none
     stages {
+        stage('Cloning Git') {
+          steps {
+            git 'https://https://github.com/caolucl/jenkins-pipeline-node'
+          }
+        }
         stage('execute') { 
             steps {
                 script {
