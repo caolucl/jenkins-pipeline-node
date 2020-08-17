@@ -11,4 +11,5 @@ HEALTHCHECK --interval=5s \
 #ENTRYPOINT ["npm", "start"]
 # tell docker what port to expose
 EXPOSE 8000
+CMD ["npm","start"]
 
