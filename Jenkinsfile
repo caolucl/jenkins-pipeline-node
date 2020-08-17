@@ -20,6 +20,7 @@ pipeline {
         }
         stage('Build image') {
             app = docker.build("node/pipeline")
+        }   
         
         
         stage('Running node') {
