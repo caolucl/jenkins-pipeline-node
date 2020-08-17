@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Check file') {
             steps {
-                sh 'npm start '
+                sh 'npm start & '
                 
             }
         }
